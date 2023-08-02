@@ -1,0 +1,112 @@
+.pop-up-container-open{
+    @apply
+    fixed
+    inset-0
+    flex items-center justify-center
+    bg-slate-300 shadow-lg bg-opacity-70;
+}
+.pop-up-container-close{
+    @apply
+    hidden
+}
+.pop-up-close-btn {
+    @apply
+    absolute top-4 right-4 text-blue-500 font-bold;
+}
+.pop-up-close-btn-dark {
+    @apply
+    absolute top-4 right-4 text-white font-semibold text-lg;
+}
+.header-parent-container {
+    @apply
+    bg-white space-y-6 rounded-lg shadow-lg w-custom-40 p-8;
+}
+.header-parent-container-dark {
+    @apply
+    space-y-6 rounded-lg shadow-lg w-custom-40 bg-slate-600 p-8;
+}
+.header-container {
+    @apply
+    flex justify-between items-center bg-inherit text-slate-900 rounded-t-lg text-xl text-black font-semibold;
+}
+.header-container-dark {
+    @apply
+    flex justify-between items-center bg-inherit text-slate-500 rounded-t-lg text-white text-xl;
+}
+.header-container p {
+    @apply
+    text-lg;
+}
+.header-container {
+    @apply
+    flex justify-between items-center bg-inherit text-slate-500 rounded-t-lg;
+}
+.form-parent-container {
+    @apply
+    space-y-12;
+}
+.form-parent-container-dark{
+    @apply
+    space-y-12 font-bold bg-inherit text-white text-lg font-semibold;
+}
+.form-inputs-parent-container {
+    @apply
+    space-y-6;
+}
+.job-title-parent-container {
+    @apply
+    gap-1;
+}
+.job-title-label {
+    @apply
+    block flex gap-1 font-semibold;
+}
+.job-input {
+    @apply
+    w-full border border-slate-300 rounded-md px-3 py-2;
+}
+.job-input-dark {
+    @apply
+    bg-slate-700 text-white focus:outline-none focus:border-transparent focus:ring-1;
+}
+.job-input-error {
+    @apply
+    border-red-500;
+}
+.error-span {
+    @apply
+    text-red-500 text-xs;
+}
+.job-label-input-container {
+    @apply
+    flex-1;
+}
+.job-company-label {
+    @apply
+    block flex gap-1 font-semibold;
+}
+.job-industry-label {
+    @apply
+    block flex gap-1 font-semibold;
+}
+.job-location-label {
+    @apply
+    block font-semibold;
+}
+.job-remote-type-label {
+    @apply
+    block space-y-1 font-semibold;
+}
+.job-loc-remote-container {
+    @apply
+    flex space-x-2;
+}
+.form-step-first-btn-container {
+    @apply
+    space-x-8;
+}
+.form-step-first-btn {
+    @apply
+    mt-6
+    px-4 py-2 bg-blue-500 text-white rounded-md float-right;
+}

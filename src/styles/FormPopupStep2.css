@@ -1,0 +1,193 @@
+.pop-up-container-open {
+    @apply
+    fixed inset-0 flex items-center justify-center
+    bg-slate-300 bg-opacity-70 shadow-lg z-50;
+}
+.pop-up-container-hidden {
+    @apply
+    hidden;
+}
+.pop-up-close-btn {
+    @apply
+    absolute top-4 right-4 text-blue-500 font-bold;
+}
+.pop-up-close-btn-dark {
+    @apply
+    absolute top-4 right-4 text-white font-semibold text-lg;
+}
+.header-parent-container {
+    @apply
+    bg-white space-y-6 rounded-lg shadow-lg w-custom-40 p-8;
+}
+.header-parent-container-dark {
+    @apply
+    space-y-6 rounded-lg shadow-lg w-custom-40 bg-slate-600 p-8;
+}
+.header-container {
+    @apply
+    flex justify-between items-center bg-inherit text-slate-500 rounded-t-lg;
+}
+.header-container-dark {
+    @apply
+    text-white flex justify-between items-center bg-inherit rounded-t-lg;
+}
+.api-error-div {
+    @apply
+    bg-red-500 text-white py-2 px-4 rounded-md transition-opacity;
+}
+.form-parent {
+    @apply
+    space-y-12;
+}
+.experience-parent-container {
+    @apply
+    flex space-x-2;
+}
+.experience-inp-label-container {
+    @apply
+    flex flex-col w-full
+}
+.experience-inputs-parent {
+    @apply
+    flex flex-row gap-2 py-2
+}
+.experience-label {
+    @apply
+    block font-semibold;
+}
+.experience-label-dark {
+    @apply
+    block font-semibold text-white;
+}
+.inps-min-max-container {
+    @apply
+    flex flex-row gap-2 py-2;
+}
+.inps-min-max {
+    @apply
+    w-1/2 border border-slate-300 rounded-md px-3 py-2;
+}
+.inps-min-max-err {
+    @apply
+    border-red-500;
+}
+.inps-min-max-dark {
+    @apply
+    bg-slate-700 text-white focus:outline-none focus:border-transparent focus:ring-1;
+}
+.inps-error-parent-container {
+    @apply
+    flex flex-row justify-between py-2
+}
+.inp-error-text {
+    @apply
+    text-red-500 text-xs
+}
+.salary-parent-container {
+    @apply
+    flex space-x-2;
+}
+.salary-inp-label-container {
+    @apply
+    flex flex-col w-full
+}
+.salary-label {
+    @apply
+    block font-semibold;
+}
+.salary-label-dark {
+    @apply
+    block font-semibold text-white;
+}
+.total-emp-input-dark {
+    @apply
+    bg-slate-700 focus:outline-none focus:border-transparent focus:ring-1;
+}
+.total-emp-input {
+    @apply
+    w-full border border-slate-300 rounded-md px-3 py-2;
+}
+.total-emp-label {
+    @apply
+    block font-semibold flex gap-1 py-2;
+}
+.total-emp-label-dark {
+    @apply
+    block font-semibold flex gap-1 py-2 text-white;
+}
+.total-emp-parent-container {
+    @apply
+    flex-1;
+}
+.apply-parent-container {
+    @apply
+    flex space-x-2 z-auto;
+}
+.apply-container {
+    @apply
+    flex-1;
+}
+.apply-label {
+    @apply
+    block font-semibold;
+}
+.apply-label-dark {
+    @apply
+    block font-semibold text-white;
+}
+.apply-radio-btns-container {
+    @apply
+    flex flex-row gap-4 py-2;
+}
+.inps-apply-radios {
+    @apply
+    transform
+    translate-y-1
+    text-blue-600
+    border-blue-300 w-2 h-2
+    rounded-full
+    /* checked:bg-blue-500 */
+    px-3 py-2;
+}
+.pop-up-btn-container {
+    @apply
+    space-x-8;
+}
+.pop-up-btn-text {
+    @apply
+    mt-6 px-4 py-2 bg-blue-500 text-white rounded-md float-right;
+}
+/* .checkbox:checked {
+    border: none;
+} */
+.checkbox:checked + .check-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.default-checked {
+    @apply
+    ring-4
+    ring-offset-2
+    ring-blue-500;
+  }
+.apply-label-inp-parent-container {
+    @apply
+    flex items-center gap-2 p-1.5;
+}
+.apply-radio-labels {
+    @apply
+    text-sm leading-4 font-normal text-gray-800 dark:text-gray-300;
+}
+.apply-inps-parent-cont {
+    @apply
+    bg-white dark:bg-gray-100 rounded-full w-3 h-3 flex flex-shrink-0
+    justify-center items-center relative;
+}
+.apply-inps {
+    @apply
+    checkbox appearance-none focus:opacity-100 focus:ring-4
+    focus:ring-offset-2 focus:ring-blue-500 focus:outline-none
+    border rounded-full border-gray-400
+    absolute cursor-pointer w-full h-full checked:border-none;
+}
