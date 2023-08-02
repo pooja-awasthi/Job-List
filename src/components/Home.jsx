@@ -146,6 +146,8 @@ const Home = () => {
       setReceivedData(response.data);
     } catch(error) {
       console.error(error)
+      setApiError(error);
+      setTimeout(() => setApiError(''), 5000);
     }
   };
 
@@ -170,11 +172,8 @@ const Home = () => {
           <DayNightTheme />
         </div>
         <div className="nav-container">
-        {/* <button
-          class="create-job-btn w-40 h-20"
-        > */}
             <div class="flex items-center justify-center">
-        <ToolTip message={"Create a New Job"} addClass="whitespace-nowrap h-1 pointer-events-none top-10 left-1 relative">
+        <ToolTip message={"Create a New Job"} addClass="whitespace-nowrap h-8 pointer-events-none top-10 left-1 relative">
                 <img
                 src="https://th.bing.com/th/id/OIP.Ulr5F4UVwysrB7jB1-tD2wHaHl?w=201&h=206&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 alt="logo"
@@ -185,7 +184,6 @@ const Home = () => {
                 />
         </ToolTip>
             </div>
-        {/* </button> */}
         </div>
         <div className='job-list-container'>
             {
@@ -226,7 +224,7 @@ const Home = () => {
                     <div className='flex flex-col gap-1 space-x-20'>
                       <p className='pl-20'>Part Time (9 am - 5 pm IST)</p>
                       <p>Experience ({obj.experience_min} - {obj.experience_max} years)</p>
-                      <p>INR {obj.salary_min ? obj.salary_min.toLocaleString('en-GB') : ' N/A'} - {obj.salary_max ? obj.salary_max.toLocaleString('en-GB') : 'N/A'} / Year</p>
+                      <p>INR (&#8377;) {obj.salary_min ? obj.salary_min.toLocaleString('en-GB') : ' N/A'} - {obj.salary_max ? obj.salary_max.toLocaleString('en-GB') : 'N/A'} / month</p>
                       <p>{obj.total_employee} employees</p>
                     </div>
                     {obj.apply_type === 'Quick Apply' ? (

@@ -30,7 +30,6 @@ const FormPopupStep2 = ({ isOpen, onClose, ...props }) => {
     experienceMax: '',
     salaryMin: '',
     salaryMax: '',
-    totalEmployee: '',
   });
 
   const validateInputs = (stateVarArr) => {
@@ -103,7 +102,6 @@ const FormPopupStep2 = ({ isOpen, onClose, ...props }) => {
       'experienceMax',
       'salaryMin',
       'salaryMax',
-      'totalEmployee',
     ]);
     const {
       experienceMin,
@@ -119,7 +117,7 @@ const FormPopupStep2 = ({ isOpen, onClose, ...props }) => {
         experience_max: parseInt(experienceMax),
         salary_min: parseInt(salaryMin),
         salary_max: parseInt(salaryMax),
-        total_employee: parseInt(totalEmployee),
+        total_employee: totalEmployee,
         apply_type: applyType,
       }
       const jobLocationDataObj = {
@@ -153,24 +151,19 @@ const FormPopupStep2 = ({ isOpen, onClose, ...props }) => {
       experienceMax: '',
       salaryMin: '',
       salaryMax: '',
-      totalEmployee: '',
     }));
     setApiError('');
   };
 
-  const [quick, setQuick] = useState(false)
-  const [external, setExternal] = useState(false)
   const externalApplyEle = useRef();
   const quickApplyEle = useRef();
   const handleChangeRadioInput = (event) => {
     console.log("value inside radio: ", event.target.value)
     console.log("id inside radio: ", event.target.id)
     if (event.target.id === 'quickApply') {
-      setQuick(true);
       quickApplyEle.current.defaultChecked = true;
     }
     if (event.target.id === 'externalApply') {
-      setExternal(true);
       externalApplyEle.current.defaultChecked = true;
     }
     setState((prevState) => ({...prevState, applyType: event.target.value}));
