@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = (env, argv) => {
-  const isDevelopment = argv.mode === 'development';
+  const isDevelopment = process.env.NODE_ENV === 'development';
 //   const isProduction = process.env.NODE_ENV === 'production';
   return {
     entry: './src/index.js',
@@ -47,7 +47,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './public/index.html',
       }),
-    //   !isProduction && new ReactRefreshWebpackPlugin(),
+      isDevelopment && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
   };
 };
