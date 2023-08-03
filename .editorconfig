@@ -1,0 +1,51 @@
+# EditorConfig to maintain consistent coding styles
+# across different editors and IDEs.
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+# trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.json]
+indent_size = 2
+
+[*.js]
+indent_size = 2
+
+[*.jsx]
+indent_size = 2
+
+[*.css]
+indent_size = 2
+
+[*.scss]
+indent_style = space
+indent_size = 2
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+# Ignore .eslintrc.js and .editorconfig files in the root
+[**/.eslintrc.js]
+exclude_patterns = .eslintrc.js
+
+# Set max line length to 100 characters
+[*.{js,jsx,ts,tsx}]
+max_line_length = 100
+
+# Indentation settings
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+[**/.editorconfig]
+exclude_patterns = .editorconfig
