@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ConfirmationBox = ({ message, onCancel, onConfirm }) => {
   return (
@@ -25,7 +25,3 @@ const ConfirmationBox = ({ message, onCancel, onConfirm }) => {
 };
 
 export default ConfirmationBox;
-
-
-
-

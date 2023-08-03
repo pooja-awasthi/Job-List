@@ -1,21 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const jobDetailInfoSlice = createSlice({
-  name: 'jobDetailInfo',
+  name: "jobDetailInfo",
   initialState: {
-    applyType: '',
-    companyName: '',
+    applyType: "",
+    companyName: "",
     experienceMax: 0,
     experienceMin: 0,
     id: 0,
-    industry: '',
-    jobTitle: '',
-    location: '',
-    remoteType: '',
+    industry: "",
+    jobTitle: "",
+    location: "",
+    remoteType: "",
     salaryMax: 0,
     salaryMin: 0,
     totalEmployee: 0,
-},
+  },
   reducers: {
     setJobDetailInfo: (state, action) => {
       state.applyType = action.payload.applyType;
@@ -35,5 +35,8 @@ const jobDetailInfoSlice = createSlice({
   },
 });
 
+// jobDetailInfoSlice action object
 export const { setJobDetailInfo } = jobDetailInfoSlice.actions;
+
+// jobDetailInfoSlice reducer
 export default jobDetailInfoSlice.reducer;

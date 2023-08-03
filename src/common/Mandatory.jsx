@@ -1,9 +1,10 @@
-import React from 'react';
+/**
+ * To add mandatory element to Form Components.
+ */
+import React from "react";
 
 const MandatoryField = () => {
-  return (
-      <span className="text-red-500">*</span>
-  );
+  return <span className="text-red-500">*</span>;
 };
 
 export default MandatoryField;

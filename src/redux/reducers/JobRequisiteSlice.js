@@ -1,13 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const jobRequisiteSlice = createSlice({
-  name: 'jobRequisite',
+  name: "jobRequisite",
   initialState: {
-    experience: {min: 0, max: 0},
-    salary: {min: 0, max: 0},
+    experience: { min: 0, max: 0 },
+    salary: { min: 0, max: 0 },
     totalEmployee: 0,
     applyType: "",
-},
+  },
   reducers: {
     setJobRequisite: (state, action) => {
       state.experience = action.payload.experience;
@@ -19,5 +19,8 @@ const jobRequisiteSlice = createSlice({
   },
 });
 
+// jobRequisiteSlice action object
 export const { setJobRequisite } = jobRequisiteSlice.actions;
+
+// jobRequisiteSlice reducer
 export default jobRequisiteSlice.reducer;

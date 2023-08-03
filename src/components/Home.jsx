@@ -315,13 +315,23 @@ const Home = () => {
                     }`}
                   />
                 </div>
-              ) : (
+              ) : obj.apply_type === "External Apply" ? (
                 <div className="w-auto transform translate-x-16 translate-y-2 text-white p-2 float-left">
                   <input
                     type="button"
                     value={obj.apply_type}
                     className={`text-blue-500 border border-blue-500 font-semibold rounded-md shadow-md p-2 ${
                       isDarkMode ? "border-2 bg-slate-400" : ""
+                    }`}
+                  />
+                </div>
+              ) : (
+                <div className="w-40 text-white transform translate-x-16 translate-y-2 p-2 float-left">
+                  <input
+                    type="button"
+                    value="Apply Now"
+                    className={`bg-blue-400 border border-grey-500 font-semibold rounded-md shadow-md p-2 ${
+                      isDarkMode ? "border-none" : ""
                     }`}
                   />
                 </div>

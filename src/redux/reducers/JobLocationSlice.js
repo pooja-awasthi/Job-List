@@ -1,14 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const jobLocationSlice = createSlice({
-  name: 'jobLocation',
+  name: "jobLocation",
   initialState: {
-    jobTitle: '',
-    companyName: '',
-    industry: '',
-    location: '',
-    remoteType: '',
-},
+    jobTitle: "",
+    companyName: "",
+    industry: "",
+    location: "",
+    remoteType: "",
+  },
   reducers: {
     setJobLocation: (state, action) => {
       state.jobTitle = action.payload.jobTitle;
@@ -21,5 +21,8 @@ const jobLocationSlice = createSlice({
   },
 });
 
+// jobLocationSlice action object
 export const { setJobLocation } = jobLocationSlice.actions;
+
+// jobLocationSlice reducer
 export default jobLocationSlice.reducer;
