@@ -6,3 +6,6 @@ List, Create, Edit and Delete of Job Cards
 
 npm install
 npm start
+
+# Hosted at surge.sh Use below link to view
+http://capsicum.surge.sh/
